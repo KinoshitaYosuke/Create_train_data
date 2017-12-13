@@ -260,3 +260,7 @@ paket-files/
 __pycache__/
 *.pyc
 /Create_train_data/test
+/Create_train_data/result_CF.bmp
+/Create_train_data/result_CD_sample.bmp
+/Create_train_data/result_CD_2.bmp
+/Create_train_data/result_CD.bmp
