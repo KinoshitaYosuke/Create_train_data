@@ -463,10 +463,10 @@ int main(int argc, char** argv) {
 			FD_max_ans = 0.0;
 			FD_max_XY = 0;
 
-			for (int a = -2; a <= 2; a++) {
-				for (int b = -2; b <= 2; b++) {
+			for (int a = 0; a <= 4; a++) {
+				for (int b = 0; b <= 4; b++) {
 
-					cv::Mat FD_img = CD_img[i](cv::Rect(a + 2, b + 2, 64, 64));
+					cv::Mat FD_img = CD_img[i](cv::Rect(a , b , 64, 64));
 
 					FD_predict(16, 44, FD_img, FD_16x44);
 					FD_predict(16, 48, FD_img, FD_16x48);
